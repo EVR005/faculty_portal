@@ -1,0 +1,54 @@
+.imgdiv{
+    background-color: #4e2a84!important;
+    width: 300px!important;
+    min-height: 500px!important;
+}
+.imgdiv img{
+    width: 170px;
+    position: relative;
+    top: 150px;
+}
+@media only screen and (max-width: 790px) {
+    .imgdiv{
+        display: none!important;
+    }
+}
+.loginbtn{
+    border-radius: 15px!important;
+    width: 230px!important;
+    padding: 10px!important;
+    background: #4e2a84!important;
+    border: none!important;
+    font-size: 14px!important;
+}
+.forgotpwd{
+    border-radius: 15px!important;
+    width: 230px!important;
+    padding: 10px!important;
+    background: #ff401f!important;
+    border: none!important;
+    font-size: 14px!important;
+    margin-left:15px;
+}
+.formdiv{
+    margin-left: 42px;
+    position: relative;
+    top: -34px;
+    font-size: 20px;
+    /* padding: 25px!important; */
+    text-align: left;
+    width: 500px!important;
+}
+input{
+    font-size: 15px;
+}
+.forms{
+    margin-top: 110px!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.imgdiv{
+    box-shadow: -8px 11px 20px 0px #4e2a84;
+}

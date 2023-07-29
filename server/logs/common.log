@@ -1,0 +1,158 @@
+2023-04-01 15:37:59 [utils\token.js] info: /api/faculty/dummy
+
+2023-04-01 15:39:34 [utils\token.js] info: /api/faculty/dummy
+
+2023-04-01 15:42:22 [utils\token.js] info: /api/faculty/dummy
+
+2023-04-01 15:52:43 [utils\token.js] info: /api/faculty/dummy
+
+2023-04-01 15:52:43 [utils\token.js] info: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtYWlsaWQiOiJzaXZhQGdtYWlsLmNvbSIsImlhdCI6MTY4MDM0MTI5MywiZXhwIjoxNjgwMzQ0ODkzfQ.zDlxwGQ_nrbJOC8ve6Mji7rxwbC-SgtuAmtmheLUizI
+
+2023-04-01 15:55:22 [utils\token.js] info: /api/faculty/dummy
+
+2023-04-01 15:55:22 [utils\token.js] info: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtYWlsaWQiOiJzaXZhQGdtYWlsLmNvbSIsImlhdCI6MTY4MDM0MTI5MywiZXhwIjoxNjgwMzQ0ODkzfQ.zDlxwGQ_nrbJOC8ve6Mji7rxwbC-SgtuAmtmheLUizI
+
+2023-04-01 16:00:39 [utils\token.js] info: /api/faculty/dummy
+
+2023-04-01 16:00:39 [utils\token.js] info: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtYWlsaWQiOiJzaXZhQGdtYWlsLmNvbSIsImlhdCI6MTY4MDM0MTI5MywiZXhwIjoxNjgwMzQ0ODkzfQ.zDlxwGQ_nrbJOC8ve6Mji7rxwbC-SgtuAmtmheLUizI
+
+2023-04-01 16:00:39 [utils\token.js] info: jwt expired
+{"name":"TokenExpiredError","expiredAt":"2023-04-01T10:28:13.000Z"}
+
+2023-04-01 16:03:53 [utils\token.js] info: /api/faculty/dummy
+
+2023-04-01 16:03:53 [utils\token.js] info: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtYWlsaWQiOiJzaXZhQGdtYWlsLmNvbSIsImlhdCI6MTY4MDM0MTI5MywiZXhwIjoxNjgwMzQ0ODkzfQ.zDlxwGQ_nrbJOC8ve6Mji7rxwbC-SgtuAmtmheLUizI
+
+2023-04-01 16:03:53 [utils\token.js] info: jwt expired
+{"name":"TokenExpiredError","expiredAt":"2023-04-01T10:28:13.000Z"}
+
+2023-04-01 16:05:01 [utils\token.js] info: /api/faculty/facultyLogin
+
+2023-04-03 10:34:03 [utils\token.js] info: /facultyLogin
+
+2023-04-03 10:38:52 [utils\token.js] info: /facultyLogin
+
+2023-04-03 10:39:59 [utils\token.js] info: /facultyLogin
+
+2023-04-03 11:14:06 [utils\token.js] info: /api/faculty/dummy
+
+2023-04-03 11:14:06 [utils\token.js] info: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtYWlsaWQiOiJzaXZhQGdtYWlsLmNvbSIsImlhdCI6MTY4MDUwMDYxMCwiZXhwIjoxNjgwNTA0MjEwfQ.FeEhsXe3R_bQZObOrizVTftMtTyg_c3en1fcOpL9Ems
+
+2023-04-03 11:22:16 [utils\token.js] info: /api/faculty/dummy
+
+2023-04-03 11:22:16 [utils\token.js] info: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtYWlsaWQiOiJzaXZhQGdtYWlsLmNvbSIsImlhdCI6MTY4MDUwMDg1NywiZXhwIjoxNjgwNTA0NDU3fQ.ZErtHvjDlIWIF9FCVcyN7m4Uc4yMfKn59_jksSVqxxs
+
+2023-04-10 21:25:00 [utils\token.js] info: /api/faculty/dummy
+
+2023-04-10 21:25:00 [utils\token.js] info: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtYWlsaWQiOiJzaXZhQGdtYWlsLmNvbSIsImlhdCI6MTY4MTE0MjA4MCwiZXhwIjoxNjgxMTQ1NjgwfQ.RG9RqrUNb5oE2TrNRcG2A_yHjIDhx2dJ68lsi-1cfxQ
+
+2023-04-10 21:25:39 [utils\token.js] info: /api/faculty/dummy
+
+2023-04-10 21:25:56 [utils\token.js] info: /api/faculty/dummy
+
+2023-04-10 21:25:56 [utils\token.js] info: /api/faculty/dummy
+
+2023-04-10 21:25:56 [utils\token.js] info: /api/faculty/dummy
+
+2023-04-10 21:25:57 [utils\token.js] info: /api/faculty/dummy
+
+2023-04-10 21:25:57 [utils\token.js] info: /api/faculty/dummy
+
+2023-04-10 21:25:57 [utils\token.js] info: /api/faculty/dummy
+
+2023-04-10 21:26:04 [utils\token.js] info: /api/faculty/dummy
+
+2023-04-10 21:26:04 [utils\token.js] info: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtYWlsaWQiOiJzaXZhQGdtYWlsLmNvbSIsImlhdCI6MTY4MTE0MjA4MCwiZXhwIjoxNjgxMTQ1NjgwfQ.RG9RqrUNb5oE2TrNRcG2A_yHjIDhx2dJ68lsi-1cfxQ
+
+2023-04-12 18:21:48 [utils\token.js] info: /api/faculty/dashboardDetails
+
+2023-04-12 18:21:48 [utils\token.js] info: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmYWN1bHR5X2lkIjoiMTIzNDU2IiwiaWF0IjoxNjgxMzAzNTAzLCJleHAiOjE2ODEzMDcxMDN9.1EcxvV2MJxDpvnFvCEK2zkAGAhh9c7ZCnDT25_QjjbM
+
+2023-04-12 18:21:50 [utils\token.js] info: /favicon.ico
+
+2023-04-12 18:21:50 [utils\token.js] info: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmYWN1bHR5X2lkIjoiMTIzNDU2IiwiaWF0IjoxNjgxMzAzNTAzLCJleHAiOjE2ODEzMDcxMDN9.1EcxvV2MJxDpvnFvCEK2zkAGAhh9c7ZCnDT25_QjjbM
+
+2023-04-12 18:26:31 [utils\token.js] info: /api/faculty/dashboardDetails
+
+2023-04-12 18:26:31 [utils\token.js] info: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmYWN1bHR5X2lkIjoiMTIzNDU2IiwiaWF0IjoxNjgxMzAzNTAzLCJleHAiOjE2ODEzMDcxMDN9.1EcxvV2MJxDpvnFvCEK2zkAGAhh9c7ZCnDT25_QjjbM
+
+2023-04-12 18:27:06 [utils\token.js] info: /api/faculty/dashboardDetails
+
+2023-04-12 18:27:06 [utils\token.js] info: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmYWN1bHR5X2lkIjoiMTIzNDU2IiwiaWF0IjoxNjgxMzAzNTAzLCJleHAiOjE2ODEzMDcxMDN9.1EcxvV2MJxDpvnFvCEK2zkAGAhh9c7ZCnDT25_QjjbM
+
+2023-04-12 18:27:30 [utils\token.js] info: /api/faculty/dashboardDetails
+
+2023-04-12 18:27:30 [utils\token.js] info: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmYWN1bHR5X2lkIjoiMTIzNDU2IiwiaWF0IjoxNjgxMzAzNTAzLCJleHAiOjE2ODEzMDcxMDN9.1EcxvV2MJxDpvnFvCEK2zkAGAhh9c7ZCnDT25_QjjbM
+
+2023-04-12 18:27:47 [utils\token.js] info: /api/faculty/dashboardDetails
+
+2023-04-12 18:27:47 [utils\token.js] info: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmYWN1bHR5X2lkIjoiMTIzNDU2IiwiaWF0IjoxNjgxMzAzNTAzLCJleHAiOjE2ODEzMDcxMDN9.1EcxvV2MJxDpvnFvCEK2zkAGAhh9c7ZCnDT25_QjjbM
+
+2023-04-12 18:30:08 [utils\token.js] info: /api/faculty/dashboardDetails
+
+2023-04-12 18:30:08 [utils\token.js] info: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmYWN1bHR5X2lkIjoiMTIzNDU2IiwiaWF0IjoxNjgxMzAzNTAzLCJleHAiOjE2ODEzMDcxMDN9.1EcxvV2MJxDpvnFvCEK2zkAGAhh9c7ZCnDT25_QjjbM
+
+2023-04-12 18:30:54 [utils\token.js] info: /api/faculty/dashboardDetails
+
+2023-04-12 18:30:54 [utils\token.js] info: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmYWN1bHR5X2lkIjoiMTIzNDU2IiwiaWF0IjoxNjgxMzAzNTAzLCJleHAiOjE2ODEzMDcxMDN9.1EcxvV2MJxDpvnFvCEK2zkAGAhh9c7ZCnDT25_QjjbM
+
+2023-04-12 18:31:57 [utils\token.js] info: /api/faculty/dashboardDetails
+
+2023-04-12 18:31:57 [utils\token.js] info: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmYWN1bHR5X2lkIjoiMTIzNDU2IiwiaWF0IjoxNjgxMzAzNTAzLCJleHAiOjE2ODEzMDcxMDN9.1EcxvV2MJxDpvnFvCEK2zkAGAhh9c7ZCnDT25_QjjbM
+
+2023-04-12 18:32:19 [utils\token.js] info: /api/faculty/dashboardDetails
+
+2023-04-12 18:32:19 [utils\token.js] info: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmYWN1bHR5X2lkIjoiMTIzNDU2IiwiaWF0IjoxNjgxMzAzNTAzLCJleHAiOjE2ODEzMDcxMDN9.1EcxvV2MJxDpvnFvCEK2zkAGAhh9c7ZCnDT25_QjjbM
+
+2023-04-12 18:33:04 [utils\token.js] info: /api/faculty/dashboardDetails
+
+2023-04-12 18:33:04 [utils\token.js] info: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmYWN1bHR5X2lkIjoiMTIzNDU2IiwiaWF0IjoxNjgxMzAzNTAzLCJleHAiOjE2ODEzMDcxMDN9.1EcxvV2MJxDpvnFvCEK2zkAGAhh9c7ZCnDT25_QjjbM
+
+2023-04-12 18:33:37 [utils\token.js] info: /api/faculty/dashboardDetails
+
+2023-04-12 18:33:37 [utils\token.js] info: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmYWN1bHR5X2lkIjoiMTIzNDU2IiwiaWF0IjoxNjgxMzAzNTAzLCJleHAiOjE2ODEzMDcxMDN9.1EcxvV2MJxDpvnFvCEK2zkAGAhh9c7ZCnDT25_QjjbM
+
+2023-04-12 18:35:31 [utils\token.js] info: /api/faculty/dashboardDetails
+
+2023-04-12 18:35:31 [utils\token.js] info: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmYWN1bHR5X2lkIjoiMTIzNDU2IiwiaWF0IjoxNjgxMzAzNTAzLCJleHAiOjE2ODEzMDcxMDN9.1EcxvV2MJxDpvnFvCEK2zkAGAhh9c7ZCnDT25_QjjbM
+
+2023-04-12 18:35:51 [utils\token.js] info: /api/faculty/dashboardDetails
+
+2023-04-12 18:35:51 [utils\token.js] info: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmYWN1bHR5X2lkIjoiMTIzNDU2IiwiaWF0IjoxNjgxMzAzNTAzLCJleHAiOjE2ODEzMDcxMDN9.1EcxvV2MJxDpvnFvCEK2zkAGAhh9c7ZCnDT25_QjjbM
+
+2023-04-12 18:37:19 [utils\token.js] info: /api/faculty/dashboardDetails
+
+2023-04-12 18:37:19 [utils\token.js] info: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmYWN1bHR5X2lkIjoiMTIzNDU2IiwiaWF0IjoxNjgxMzAzNTAzLCJleHAiOjE2ODEzMDcxMDN9.1EcxvV2MJxDpvnFvCEK2zkAGAhh9c7ZCnDT25_QjjbM
+
+2023-04-12 18:42:27 [utils\token.js] info: /api/faculty/dashboardDetails
+
+2023-04-12 18:42:27 [utils\token.js] info: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmYWN1bHR5X2lkIjoiMTIzNDU2IiwiaWF0IjoxNjgxMzAzNTAzLCJleHAiOjE2ODEzMDcxMDN9.1EcxvV2MJxDpvnFvCEK2zkAGAhh9c7ZCnDT25_QjjbM
+
+2023-04-29 12:43:59 [utils\token.js] info: /api/faculty/dashboardDetails
+
+2023-04-29 12:43:59 [utils\token.js] info: /api/faculty/dashboardDetails
+
+2023-04-29 12:44:36 [utils\token.js] info: /api/faculty/dashboardDetails
+
+2023-04-29 12:44:36 [utils\token.js] info: /api/faculty/dashboardDetails
+
+2023-04-29 14:07:15 [utils\token.js] info: /api/faculty/dummy
+
+2023-04-29 14:11:31 [utils\token.js] info: /api/faculty/dummy
+
+2023-04-29 14:21:37 [utils\token.js] info: /api/faculty/dummy
+
+2023-04-29 14:21:45 [utils\token.js] info: /api/faculty/dummy
+
+2023-04-29 14:24:01 [utils\token.js] info: /api/faculty/dummy
+
+2023-04-29 14:27:43 [utils\token.js] info: /api/faculty/dummy
+
+2023-04-29 15:00:06 [utils\token.js] info: -->
+
+2023-04-29 15:06:32 [utils\token.js] info: -->
+
+2023-04-29 15:08:28 [utils\token.js] info: -->
+
+2023-04-29 15:10:23 [utils\token.js] info: -->
+
