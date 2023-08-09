@@ -92,7 +92,7 @@ const Edit = () => {
         );
         setValue(
           "description",
-          data.data.facultyDetails ? data.data.facultyDetails.emp_id : ""
+          data.data.facultyDetails ? data.data.facultyDetails.description : ""
         );
         setValue(
           "gender",
@@ -524,7 +524,19 @@ const Edit = () => {
 
   return (
     <div className="edit">
-      <NavBar></NavBar>
+      <NavBar
+        title={
+          JSON.parse(localStorage.getItem("fac_title")) != ""
+            ? JSON.parse(localStorage.getItem("fac_title"))
+            : "Mr"
+        }
+        fname={
+          JSON.parse(localStorage.getItem("fac_name")) != ""
+            ? JSON.parse(localStorage.getItem("fac_name"))
+            : ""
+        }
+        fac_id={Cookies.get("emp_id") ? Cookies.get("emp_id") : ""}
+      />
       {/* onSubmit={handleSubmit(onSubmit)} */}
       <form>
         <div className="row p-4">

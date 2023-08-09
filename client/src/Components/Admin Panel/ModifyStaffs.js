@@ -3,9 +3,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { MDBDataTable } from "mdbreact";
 import "../../styles/modifyStaffs.css";
 import { useForm, useController, Controller } from "react-hook-form";
+import StaffTable from "./StaffsTable";
 import axios from "axios";
 
 const ModifyStaffsTable = () => {
+  const [updated, setUpdated] = useState(true);
   const [dataValues, setData] = useState([]);
 
   const data = {
@@ -36,7 +38,7 @@ const ModifyStaffsTable = () => {
       console.log(data);
       setData(data.data["stafflist"]);
     });
-  }, []);
+  }, [updated]);
 
   const {
     register,
@@ -47,15 +49,19 @@ const ModifyStaffsTable = () => {
     handleSubmit,
   } = useForm();
 
-  const addFaculty = (data) => {
+  const addFaculty = async (data) => {
     console.log(data);
-    axios
+    await axios
       .post("http://localhost:5000/api/faculty/addStaff", {
         email_id: data["email"],
         emp_id: data["emp_id"],
         password: data["password"],
       })
       .then((data) => {});
+    setValue("email", "");
+    setValue("emp_id", "");
+    setValue("password", "");
+    setUpdated(!updated);
   };
 
   return (
@@ -115,7 +121,7 @@ const ModifyStaffsTable = () => {
               </td>
             </tr>
           </table>
-          <MDBDataTable striped bordered small data={data} />;
+          <StaffTable striped bordered small data={data} />;
         </div>
       </div>
     </div>

@@ -43,4 +43,3 @@ const Experiences = sequelize.define("experiences", {
 });
 
 module.exports = Experiences;
-

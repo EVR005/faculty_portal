@@ -12,6 +12,7 @@ const { jwtDetails } = require("../config/config");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 const Citations = require("../models/CitationModel");
+const { Op } = require("sequelize");
 
 const getAward = async (req, res) => {
   try {
@@ -217,7 +218,7 @@ const getAllSpecificPublication = async (req, res) => {
     console.log("here" + emp_id);
     await Publications.findOne({ where: { emp_id: emp_id } })
       .then((data) => {
-        console.log(data);
+        //console.log(data);
         return res.status(200).send(data);
       })
       .catch((err) => {
@@ -303,7 +304,13 @@ const scrapSpecfic = async (req, res) => {
 
 const listStaff = async (req, res) => {
   try {
-    await LoginModel.findAll()
+    await LoginModel.findAll({
+      where: {
+        email_id: {
+          [Op.not]: "admin@gmail.com",
+        },
+      },
+    })
       .then((data) => {
         console.log(data);
         return res.status(200).send({ stafflist: data });

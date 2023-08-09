@@ -13,13 +13,13 @@ const AdminHomePage = () => {
     <div>
       <AdminNavbar />
       <Tabs
-        defaultActiveKey="profile"
+        defaultActiveKey="modify"
         id="uncontrolled-tab-example"
         className="mb-3"
       >
-        <Tab eventKey="view" title="View Staffs">
+        {/* <Tab eventKey="view" title="View Staffs">
           <ViewStaffsTable />
-        </Tab>
+        </Tab> */}
         <Tab eventKey="modify" title="Modify Staffs">
           {/* Add Staff Form comes here */}
           <ModifyStaffsTable />

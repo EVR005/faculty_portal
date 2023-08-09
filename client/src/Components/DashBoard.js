@@ -171,24 +171,28 @@ const DashBoard = () => {
                     : "https://st3.depositphotos.com/6672868/13701/v/450/depositphotos_137014128-stock-illustration-user-profile-icon.jpg"
                 }
                 alt="avatar"
-                className="rounded-circle img-fluid"
-                style={{ width: "150px" }}
+                className="rounded-circle img-fluid mt-2"
+                style={{ width: "150px", height: "150px" }}
               />
               <h5
                 className="my-1"
                 style={{ color: "#4e2a84", fontWeight: "700" }}
               >
                 {dataValues.facultyDetails
+                  ? dataValues.facultyDetails.title
+                  : ""}
+                .
+                {dataValues.facultyDetails
                   ? dataValues.facultyDetails.first_name
                   : ""}
                 {/* {dataValues["email_id"]} */}
               </h5>
               <p
-                className="text-muted mb-1"
+                className="mb-1"
                 style={{ fontWeight: "500", fontSize: "18px" }}
               >
                 {dataValues.facultyDetails
-                  ? dataValues.facultyDetails.position
+                  ? dataValues.facultyDetails.description
                   : ""}
               </p>
               <p className="mb-1" style={{ fontWeight: "400" }}>
@@ -315,7 +319,7 @@ const DashBoard = () => {
         </div>
       </div>
 
-      <div className="row ">
+      <div className="row">
         <div
           className="col-sm-10  col-lg-3 bottomalert"
           style={{ width: "340px" }}

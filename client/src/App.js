@@ -12,6 +12,7 @@ import ViewClientPublications from "./Components/ViewClientPublications";
 import ViewProfBody from "./Components/ViewProfBody";
 import Honours from "./Components/Honours";
 import PDFPage from "./Components/Admin Panel/PDFPage";
+import StaffTable from "./Components/Admin Panel/StaffsTable";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route path="/profBody" element={<ViewProfBody />} />
         <Route path="/honours" element={<Honours />} />
         <Route path="/PDFPage" element={<PDFPage />} />
+        <Route path="/staffs" element={<StaffTable />} />
       </Routes>
     </Router>
   );
