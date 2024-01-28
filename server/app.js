@@ -3,7 +3,6 @@ var logger = require("./utils/log")(module);
 const app = express();
 const cors = require("cors");
 const puppeteer = require("puppeteer");
-const { BulkInsert } = require("./bulkinsert");
 // app.use(cors());
 
 app.use(cors({ credentials: true, origin: "http://localhost:3000" }));
@@ -302,7 +301,6 @@ app.use("/api/faculty", facultyroutes);
 app.use((req, res, next) => {
   res.status(404).send({ message: "Page Not Found" });
 });
-// BulkInsert();
 const port = 5000;
 app.listen(port, () => {
   console.log("Server is listening at port " + port);
