@@ -42,9 +42,11 @@ const ViewProfBody = () => {
         },
       })
       .then((res) => {
-        if (res.data && res.data.length>0) {
+        console.log("hiiii");
+        console.log(res.data);
+        if (res.data && Object.keys(res.data).length > 0) {
           console.log(res.data);
-          let temp = res.data[0];
+          let temp = res.data;
           let tempdata = [];
           for (let i = 0; i < JSON.parse(temp.title).length; i++) {
             let x = {};
@@ -54,6 +56,7 @@ const ViewProfBody = () => {
           }
           console.log(tempdata);
           setData(tempdata);
+          console.log(dataValues);
         }
         //   console.log(res);
       });

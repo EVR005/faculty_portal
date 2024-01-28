@@ -60,8 +60,11 @@ const addAward = async (req, res) => {
 
 const getProfessionalBody = async (req, res) => {
   try {
-    await ProfBody.findAll()
+    let emp_id = req.query.emp_id;
+    console.log("hiii+" + emp_id);
+    await ProfBody.findOne({ where: { emp_id: emp_id } })
       .then((data) => {
+        console.log(data);
         return res.status(200).send(data);
       })
       .catch((err) => {
@@ -286,13 +289,13 @@ const scrapSpecfic = async (req, res) => {
               })
               .catch((err) => {
                 return res.status(404).send({ msg: "Unable scrap data" });
-              })
-              .catch((err) => {
-                return res.status(405).send({ msg: "Unable scrap data" });
-              })
-              .catch((err) => {
-                return res.status(406).send({ msg: "Unable scrap data" });
               });
+            // .catch((err) => {
+            //   return res.status(405).send({ msg: "Unable scrap data" });
+            // })
+            // .catch((err) => {
+            //   return res.status(406).send({ msg: "Unable scrap data" });
+            // });
           });
       }
     );
