@@ -18,7 +18,7 @@ const Honours = () => {
   } = useForm();
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/faculty/getAward", {
+      .get("https://audistfis.onrender.com/api/faculty/getAward", {
         params: { emp_id: Cookies.get("emp_id") },
       })
       .then((data) => {
@@ -54,7 +54,7 @@ const Honours = () => {
   const addAward = async (data) => {
     console.log(data);
     await axios.post(
-      "http://localhost:5000/api/faculty/addAward",
+      "https://audistfis.onrender.com/api/faculty/addAward",
       { data },
       { params: { emp_id: Cookies.get("emp_id") } }
     );

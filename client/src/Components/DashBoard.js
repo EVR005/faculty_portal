@@ -23,7 +23,7 @@ const DashBoard = () => {
   // const [qualifications, setQualifications] = useState([]);
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/faculty/dashboardDetails", {
+      .get("https://audistfis.onrender.com/api/faculty/dashboardDetails", {
         params: {
           accessToken: Cookies.get("accessToken"),
           emp_id: Cookies.get("emp_id"),

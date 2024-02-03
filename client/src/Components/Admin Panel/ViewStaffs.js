@@ -29,10 +29,12 @@ const ViewStaffsTable = () => {
     rows: dataValues ? dataValues : [],
   };
   useEffect(() => {
-    axios.get("http://localhost:5000/api/faculty/listStaff").then((data) => {
-      console.log(data);
-      setData(data.data["stafflist"]);
-    });
+    axios
+      .get("https://audistfis.onrender.com/api/faculty/listStaff")
+      .then((data) => {
+        console.log(data);
+        setData(data.data["stafflist"]);
+      });
   }, []);
 
   return <MDBDataTable striped bordered small data={data} />;

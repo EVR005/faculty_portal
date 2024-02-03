@@ -10,12 +10,15 @@ const StaffTable = (props) => {
     let k = e.target.parentElement.getAttribute("k");
     console.log(props.data.rows[k].emp_id);
     await axios
-      .get("http://localhost:5000/api/faculty/getAllSpecificPublications", {
-        params: {
-          accessToken: Cookies.get("accessToken"),
-          emp_id: props.data ? props.data.rows[k].emp_id : "",
-        },
-      })
+      .get(
+        "https://audistfis.onrender.com/api/faculty/getAllSpecificPublications",
+        {
+          params: {
+            accessToken: Cookies.get("accessToken"),
+            emp_id: props.data ? props.data.rows[k].emp_id : "",
+          },
+        }
+      )
       .then((res) => {
         if (res.data) {
           console.log(res.data);

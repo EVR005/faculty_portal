@@ -15,10 +15,12 @@ const ViewAlert = () => {
     handleSubmit,
   } = useForm();
   useEffect(() => {
-    axios.get("http://localhost:5000/api/faculty/listAlert").then((data) => {
-      setData(data.data["alertlist"]);
-      console.log(dataValues);
-    });
+    axios
+      .get("https://audistfis.onrender.com/api/faculty/listAlert")
+      .then((data) => {
+        setData(data.data["alertlist"]);
+        console.log(dataValues);
+      });
   }, []);
 
   const data = {
@@ -42,7 +44,7 @@ const ViewAlert = () => {
   const addAlert = (data) => {
     console.log(data);
     axios
-      .post("http://localhost:5000/api/faculty/addAlert", {
+      .post("https://audistfis.onrender.com/api/faculty/addAlert", {
         alert_content: data["alert"],
       })
       .then((data) => {});

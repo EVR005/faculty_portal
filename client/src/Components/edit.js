@@ -37,7 +37,7 @@ const Edit = () => {
     data["emp_id"] = Cookies.get("emp_id") ? Cookies.get("emp_id") : "";
     console.log(data);
     axios
-      .post("http://localhost:5000/api/faculty/updateDetails", {
+      .post("https://audistfis.onrender.com/api/faculty/updateDetails", {
         dataValues: data,
       })
       .then((res) => {
@@ -51,7 +51,7 @@ const Edit = () => {
         }
       })
       .catch((err) => console.log(err));
-    // await axios.post("http://localhost:5000/api/books", data);
+    // await axios.post("https://audistfis.onrender.com/api/books", data);
     // reset();
     console.log(data);
   };
@@ -64,7 +64,7 @@ const Edit = () => {
     let q = [],
       e = [];
     axios
-      .get("http://localhost:5000/api/faculty/dashboardDetails", {
+      .get("https://audistfis.onrender.com/api/faculty/dashboardDetails", {
         params: {
           accessToken: Cookies.get("accessToken"),
           emp_id: Cookies.get("emp_id"),

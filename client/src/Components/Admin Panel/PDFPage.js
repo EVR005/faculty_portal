@@ -11,7 +11,7 @@ const BasicDocument = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/faculty/getAllPublications")
+      .get("https://audistfis.onrender.com/api/faculty/getAllPublications")
       .then((res) => {
         let temp = res.data,
           tempdata = [];

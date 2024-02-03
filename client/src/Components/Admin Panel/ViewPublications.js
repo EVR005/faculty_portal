@@ -21,7 +21,7 @@ const ViewPublications = () => {
     handleSubmit,
   } = useForm();
 
-   const exportPDF = () => {
+  const exportPDF = () => {
     console.log("Calledf");
     const unit = "pt";
     const size = "A4"; // Use A1, A2, A3 or A4
@@ -32,23 +32,25 @@ const ViewPublications = () => {
 
     doc.setFontSize(15);
     const title = "Overall Publications";
-    const headers = [["Title", "Citation","Year"]];
-    const data= dataValues?(dataValues.map(ele=>[ele.title,ele.citedby,ele.year])):['CNN Project','5','2002']
-    console.log(data)
+    const headers = [["Title", "Citation", "Year"]];
+    const data = dataValues
+      ? dataValues.map((ele) => [ele.title, ele.citedby, ele.year])
+      : ["CNN Project", "5", "2002"];
+    console.log(data);
     let content = {
       startY: 50,
       head: headers,
-      body: data
+      body: data,
     };
 
     doc.text(title, marginLeft, 40);
     doc.autoTable(content);
-    doc.save("report.pdf")
+    doc.save("report.pdf");
     console.log("Saved Successfully");
-  }
+  };
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/faculty/getAllPublications")
+      .get("https://audistfis.onrender.com/api/faculty/getAllPublications")
       .then((res) => {
         let temp = res.data,
           tempdata = [];
@@ -109,12 +111,7 @@ const ViewPublications = () => {
           ""
         )} */}
 
-        {dataValues ? (
-         <button onClick={exportPDF} >Export Pdf</button>
-          
-        ) : (
-          ""
-        )}
+        {dataValues ? <button onClick={exportPDF}>Export Pdf</button> : ""}
 
         <div className="col-md-12">
           <MDBDataTable striped bordered data={data} />

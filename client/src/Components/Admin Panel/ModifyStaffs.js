@@ -34,10 +34,12 @@ const ModifyStaffsTable = () => {
     rows: dataValues ? dataValues : [],
   };
   useEffect(() => {
-    axios.get("http://localhost:5000/api/faculty/listStaff").then((data) => {
-      console.log(data);
-      setData(data.data["stafflist"]);
-    });
+    axios
+      .get("https://audistfis.onrender.com/api/faculty/listStaff")
+      .then((data) => {
+        console.log(data);
+        setData(data.data["stafflist"]);
+      });
   }, [updated]);
 
   const {
@@ -52,7 +54,7 @@ const ModifyStaffsTable = () => {
   const addFaculty = async (data) => {
     console.log(data);
     await axios
-      .post("http://localhost:5000/api/faculty/addStaff", {
+      .post("https://audistfis.onrender.com/api/faculty/addStaff", {
         email_id: data["email"],
         emp_id: data["emp_id"],
         password: data["password"],

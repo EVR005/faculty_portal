@@ -12,7 +12,7 @@ const Dummy = () => {
     const password = passwordref.current.value;
     axios
       .post(
-        "http://localhost:5000/api/faculty/dummy",
+        "https://audistfis.onrender.com/api/faculty/dummy",
         {
           mail: email,
           password: password,

@@ -35,7 +35,7 @@ const ViewProfBody = () => {
   } = useForm();
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/faculty/getProfBody", {
+      .get("https://audistfis.onrender.com/api/faculty/getProfBody", {
         params: {
           accessToken: Cookies.get("accessToken"),
           emp_id: Cookies.get("emp_id"),
@@ -64,7 +64,7 @@ const ViewProfBody = () => {
 
   const scrapdetails = () => {
     axios
-      .get("http://localhost:5000/api/faculty/scrapProfBody", {
+      .get("https://audistfis.onrender.com/api/faculty/scrapProfBody", {
         params: {
           accessToken: Cookies.get("accessToken"),
           emp_id: Cookies.get("emp_id"),
@@ -86,7 +86,7 @@ const ViewProfBody = () => {
   const addProfBody = async (data) => {
     console.log(data);
     await axios
-      .post("http://localhost:5000/api/faculty/addProfBody", {
+      .post("https://audistfis.onrender.com/api/faculty/addProfBody", {
         title: data["title"],
         subtitle: data["subtitle"],
         emp_id: Cookies.get("emp_id"),

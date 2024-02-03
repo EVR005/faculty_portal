@@ -28,7 +28,7 @@ const ViewClientPublications = () => {
     handleSubmit: handleSubmit1,
   } = useForm();
 
-  //   axios.get("http://localhost:5000/api/faculty/listAlert").then((data) => {
+  //   axios.get("https://audistfis.onrender.com/api/faculty/listAlert").then((data) => {
   //     setData(data.data["alertlist"]);
   //     console.log(dataValues);
   //   });
@@ -65,12 +65,15 @@ const ViewClientPublications = () => {
   };
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/faculty/getAllSpecificPublications", {
-        params: {
-          accessToken: Cookies.get("accessToken"),
-          emp_id: Cookies.get("emp_id"),
-        },
-      })
+      .get(
+        "https://audistfis.onrender.com/api/faculty/getAllSpecificPublications",
+        {
+          params: {
+            accessToken: Cookies.get("accessToken"),
+            emp_id: Cookies.get("emp_id"),
+          },
+        }
+      )
       .then((res) => {
         if (res.data) {
           console.log(res.data);
@@ -116,7 +119,7 @@ const ViewClientPublications = () => {
   const addPublication = async (data) => {
     console.log(data);
     await axios
-      .post("http://localhost:5000/api/faculty/addPublication", {
+      .post("https://audistfis.onrender.com/api/faculty/addPublication", {
         title: data["title"],
         citedby: data["citedby"],
         year: data["year"],
@@ -134,7 +137,7 @@ const ViewClientPublications = () => {
 
   const scrapdetails = () => {
     axios
-      .get("http://localhost:5000/api/faculty/scrapSpecific", {
+      .get("https://audistfis.onrender.com/api/faculty/scrapSpecific", {
         params: {
           accessToken: Cookies.get("accessToken"),
           emp_id: Cookies.get("emp_id"),

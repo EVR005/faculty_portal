@@ -25,7 +25,7 @@ const LoginForm = () => {
     }
     //10.16.49.58:5000
     axios
-      .post("http://localhost:5000/api/faculty/facultyLogin", {
+      .post("https://audistfis.onrender.com/api/faculty/facultyLogin", {
         mail: email,
         password: password,
       })
