@@ -5,7 +5,7 @@ const cors = require("cors");
 const puppeteer = require("puppeteer");
 // app.use(cors());
 
-app.use(cors({ credentials: true, origin: "http://localhost:3000" }));
+app.use(cors({ credentials: true, origin: "https://audistfis.vercel.app" }));
 
 const sequelize = require("./db_connect");
 const utils = require("./utils");
