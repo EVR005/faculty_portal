@@ -24,7 +24,7 @@ const { Login } = require("./controllers/facultyOperation");
 const Experiences = require("./models/experiences");
 const Qualification = require("./models/qualifications");
 
-import { publicRouter } from "./routes/public";
+const { publicRouter } = require("./routes/public");
 
 //database connection
 sequelize
