@@ -23,6 +23,9 @@ const facultyroutes = require("./routes/faculty");
 const { Login } = require("./controllers/facultyOperation");
 const Experiences = require("./models/experiences");
 const Qualification = require("./models/qualifications");
+
+import { publicRouter } from "./routes/public";
+
 //database connection
 sequelize
   .sync()
@@ -150,7 +153,7 @@ app.get("/imageUrl", async (req, res) => {
   const page = await browser.newPage();
   await page.goto("https://annauniv.irins.org/profile/170322");
   const images = await page.$$eval(".img-responsive", (anchors) =>
-    [].map.call(anchors, (img) => img.src)
+    [].map.call(anchors, (img) => img.src),
   );
   // let element = await page.waitForSelector("#preview img[src]")
   // let text = await page.evaluate(
@@ -247,34 +250,34 @@ app.get("/scrapData", async (req, res) => {
           const browser = await puppeteer.launch();
           const page = await browser.newPage();
           await page.goto(
-            "https://scholar.google.com/citations?hl=en&user=" + gs_id[i]
+            "https://scholar.google.com/citations?hl=en&user=" + gs_id[i],
           );
 
           let element = await page.waitForSelector("#gsc_prf_in");
           let text = await page.evaluate(
             (element) => element.textContent,
-            element
+            element,
           );
           const titleArray = await page.evaluate(() =>
             [
               ...document.querySelectorAll(
-                "#gsc_a_tw > table > tbody > tr > td.gsc_a_t"
+                "#gsc_a_tw > table > tbody > tr > td.gsc_a_t",
               ),
-            ].map((elem) => elem.innerText)
+            ].map((elem) => elem.innerText),
           );
           const CitationArray = await page.evaluate(() =>
             [
               ...document.querySelectorAll(
-                "#gsc_a_tw > table > tbody > tr > td.gsc_a_c"
+                "#gsc_a_tw > table > tbody > tr > td.gsc_a_c",
               ),
-            ].map((elem) => elem.innerText)
+            ].map((elem) => elem.innerText),
           );
           const yearArray = await page.evaluate(() =>
             [
               ...document.querySelectorAll(
-                "#gsc_a_tw > table > tbody > tr > td.gsc_a_y"
+                "#gsc_a_tw > table > tbody > tr > td.gsc_a_y",
               ),
-            ].map((elem) => elem.innerText)
+            ].map((elem) => elem.innerText),
           );
 
           let newData = {
@@ -298,6 +301,7 @@ app.get("/scrapData", async (req, res) => {
 });
 
 app.use("/api/faculty", facultyroutes);
+app.use("/api/public", publicRouter);
 app.use((req, res, next) => {
   res.status(404).send({ message: "Page Not Found" });
 });
